@@ -105,6 +105,7 @@ p {
     line-height: 24px;
 }
 
+
 /* About Section */
 
 .about-container {
@@ -135,6 +136,11 @@ p {
 
 .projects-card, .progress-card {
     margin-top: 48px;
+}
+
+.projects-card:hover, .progress-card:hover {
+    box-shadow: 4px 4px 12px 4px rgba(224,220,224,1);
+    cursor: pointer;
 }
 
 
