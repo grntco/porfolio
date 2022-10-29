@@ -100,11 +100,17 @@ body {
     box-shadow: 2px 2px 8px 0px rgba(224,220,224,1);
 }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
 p {
     margin-top: 16px;
     line-height: 24px;
 }
-
 
 /* About Section */
 
@@ -128,10 +134,15 @@ p {
     align-items: center;
 }
 
+/* .date {
+ color: 
+} */
+
 .projects-container h2, .progress-container h2 {
     font-size: 64px;
     padding: 0px 48px 24px 48px;
     border-bottom: 1.5px solid #7d8087;
+
 }
 
 .projects-card, .progress-card {
@@ -143,5 +154,44 @@ p {
     cursor: pointer;
 }
 
+.projects-card h3, .progress-card h3 {
+    font-size: 24px;
+}
+
+.language-list {
+    display: flex;
+    list-style: none;
+    gap: 24px
+}
+
+.language-item {
+    font-size: 24px;
+}
+
+.fa-html5 {
+    color: #E44D26;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-square-js {
+    color: #F0DB4F;
+}
+
+.excerpt {
+
+}
+
+.card-links-list {
+    display: flex;
+    list-style: none;
+    margin-top: 24px;
+    gap: 16px;
+}
+
+.card-links {
 
 
+}
