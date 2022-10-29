@@ -12,6 +12,27 @@ body {
     display: flex;
 }
 
+/* Light/Dark Theme Icon */
+.theme-icon {
+    position: fixed;
+    top: 64px;
+    right: 64px;
+    font-size: 24px;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px 0px rgba(224,220,224,1);
+}
+
+.theme-icon:hover {
+    box-shadow: 4px 4px 12px 4px rgba(224,220,224,1);
+    cursor: pointer;
+}
+
 .sidebar {
     background-color: #fff;
     height: 100vh;
