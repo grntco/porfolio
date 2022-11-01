@@ -150,8 +150,8 @@ body {
     background-color: var(--secondary-color);
     border: 1.5px solid var(--border-color);
     box-shadow: var(--box-shadow);
-    min-width: auto;
-    max-width: 640px;
+    min-width: 640px;
+    width: 70%;
     padding: 48px 64px;
     border-radius: 16px;
 }
