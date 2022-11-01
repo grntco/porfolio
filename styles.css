@@ -1,4 +1,14 @@
-/* Navigation Bar */
+:root {
+    --primary-color: #F0F0F0;
+    --secondary-color: #F8F8F8;
+    --primary-txt-color: #585858;
+    --secondary-txt-color: #808080;
+    --h-color: #383838; 
+    --border-color: #DCDCDC;
+    --box-shadow: 2px 2px 8px 0px rgba(224,220,224,1);
+    --box-shadow-hover: 4px 4px 12px 4px rgba(224,220,224,1);
+    /* --link-color:  */
+}
 
 * {
     box-sizing: border-box;
@@ -9,16 +19,15 @@
 
 body {
     display: flex;
-    background-color: #F0F0F0;
-    color: #585858;
-}
-
-a {
-    color: #585858;
+    background-color: var(--primary-color);
+    color: var(--primary-txt-color);
 }
 
 /* Light/Dark Theme Icon */
 .theme-icon {
+    background-color: var(--secondary-color);
+    border: 1.5px solid var(--border-color);
+    box-shadow: var(--box-shadow);
     position: fixed;
     top: 64px;
     right: 64px;
@@ -26,45 +35,30 @@ a {
     height: 48px;
     width: 48px;
     border-radius: 50%;
-    background-color: #F8F8F8;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 8px 0px rgba(224,220,224,1);
-    border: 1.5px solid #DCDCDC;
-}
-
-.theme-icon:hover {
-    box-shadow: 4px 4px 12px 4px rgba(224,220,224,1);
     cursor: pointer;
 }
 
-/* Bottom Blur */
-/* .bottom-blur-container {
-    z-index: 1;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    height: 48px;
-    background-color: rgba(255, 255, 255, .1);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 0 48px 48px rgba(255, 255, 255, .1);
-} */
+.theme-icon:hover {
+    box-shadow: var(--box-shadow-hover);
+}
 
 /* Sidebar Navigation */
 
 .sidebar {
-    background-color: #F8F8F8;
+    background-color: var(--secondary-color);
+    border-right: 1.5px solid var(--border-color);
+    box-shadow: var(--box-shadow);
     height: 100vh;
     min-width: 320px;
     padding: 0px 24px 0px 0px;
     display: flex;
     justify-content: center;
     border-radius: 0px 16px 16px 0px;
-    box-shadow: 2px 2px 8px 0px rgba(224,220,224,1);
     position: fixed;
     z-index: 2;
-    border-right: 1.5px solid #DCDCDC;
 }
 
 .sidebar-container {
@@ -74,9 +68,9 @@ a {
 }
 
 .name {
+    color: var(--h-color);
     font-size: 32px;
     margin-top: 25vh;
-    color: #383838;
     font-weight: 600;
 }
 
@@ -89,6 +83,7 @@ a {
 }
 
 .sidebar-links a {
+    color: var(--primary-txt-color);
     text-decoration: none;
     font-size: 20px;
     padding: 8px 12px;
@@ -97,7 +92,7 @@ a {
 }
 
 .sidebar-links a:hover {
-    background-color: #DCDCDC;
+    background-color: var(--border-color);
     transition: all 0.3s ease;
 }
 
@@ -109,6 +104,7 @@ a {
 }
 
 .sidebar-icons a {
+    color: var(--primary-txt-color);
     font-size: 20px;
     padding: 4px 8px;
     border-radius: 8px;
@@ -116,7 +112,7 @@ a {
 }
 
 .sidebar-icons a:hover {
-    background-color: #DCDCDC;
+    background-color: var(--border-color);
     transition: all 0.3s ease;
 }
 
@@ -128,7 +124,6 @@ a {
 
 /* Main Section */
 .main-container {
-    background-color: #F0F0F0;
     width: 100%;
     margin-left: 320px;
 }
@@ -136,14 +131,13 @@ a {
 /* Cards */
 
 .card {
-    background-color: #F8F8F8;
+    background-color: var(--secondary-color);
+    border: 1.5px solid var(--border-color);
+    box-shadow: var(--box-shadow);
     min-width: auto;
     max-width: 640px;
     padding: 48px 64px;
     border-radius: 16px;
-    box-shadow: 2px 2px 8px 0px rgba(224,220,224,1);
-    border: 1.5px solid #DCDCDC;
-
 }
 
 .card-header {
@@ -154,7 +148,7 @@ a {
 }
 
 .card h2, h3 {
-    color: #383838;
+    color: var(--h-color);
     font-weight: 600;
 }
 
@@ -164,11 +158,11 @@ p {
 }
 
 .card a {
-    color: #808080;
+    color: var(--secondary-txt-color);
 }
 
 .card a:hover {
-    color: #585858;
+    color: var(--primary-txt-color);
 }
 
 .card-img {
@@ -178,10 +172,6 @@ p {
 
 .more-info {
     display: none;
-}
-
-.card.active {
-
 }
 
 /* About Section */
@@ -207,7 +197,7 @@ p {
 }
 
 .date {
-    color: #808080;
+    color: var(--secondary-txt-color);
 }
 
 .projects-container h2, .progress-container h2 {
@@ -229,7 +219,7 @@ p {
 
 .projects-card h3, .progress-card h3 {
     font-size: 24px;
-    color: #383838;
+    color: var(--h-color);
     font-weight: 600;
 }
 
@@ -271,6 +261,19 @@ p {
 }
 
 .percent-complete {
-    color: #808080;
+    color: var(--secondary-txt-color)
 }
 
+
+
+/* Bottom Blur */
+/* .bottom-blur-container {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 48px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 48px 48px rgba(255, 255, 255, .1);
+} */

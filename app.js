@@ -14,7 +14,7 @@ const themeIcon = document.querySelector('.theme-icon');
 
 const sidebar = document.querySelector('.sidebar');
 const name = document.querySelector('.name');
-const sidebarLinks = document.querySelectorAll('a.sidebar-links');
+const sidebarLinks = document.querySelectorAll('sidebar-links.a');
 
 
 
