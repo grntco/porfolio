@@ -7,7 +7,18 @@
     --border-color: #DCDCDC;
     --box-shadow: 2px 2px 8px 0px rgba(224,220,224,1);
     --box-shadow-hover: 4px 4px 12px 4px rgba(224,220,224,1);
-    /* --link-color:  */
+}
+
+/* Dark Mode */
+.dark-mode {
+    --primary-color: #121212;
+    --secondary-color: #181818;
+    --primary-txt-color: #F0F0F0;
+    --secondary-txt-color: #C8C8C8; 
+    --h-color: #F8F8F8;
+    --border-color: #404040;
+    --box-shadow: 2px 2px 8px 0px rgba(30,30,30,1);
+    --box-shadow-hover: 4px 4px 12px 4px rgba(30,30,30,1);
 }
 
 * {
@@ -28,6 +39,7 @@ body {
     background-color: var(--secondary-color);
     border: 1.5px solid var(--border-color);
     box-shadow: var(--box-shadow);
+    color: var(--primary-txt-color);
     position: fixed;
     top: 64px;
     right: 64px;
@@ -44,6 +56,10 @@ body {
 .theme-icon:hover {
     box-shadow: var(--box-shadow-hover);
 }
+
+/* .fa-sun-bright {
+    color: var(--primary-txt-color);
+} */
 
 /* Sidebar Navigation */
 
@@ -204,7 +220,7 @@ p {
     font-size: 64px;
     padding: 0px 48px 24px 48px;
     border-bottom: 1.5px solid #DCDCDC;
-    color: #383838;
+    color: var(--h-color);
     font-weight: 600;
 }
 
@@ -213,7 +229,7 @@ p {
 }
 
 .projects-card:hover, .progress-card:hover {
-    box-shadow: 4px 4px 12px 4px rgba(224,220,224,1);
+    box-shadow: var(--box-shadow-hover);
     cursor: pointer;
 }
 
