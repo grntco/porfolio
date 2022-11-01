@@ -5,12 +5,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    color: #585858;
 }
 
 body {
     display: flex;
     background-color: #F0F0F0;
+    color: #585858;
+}
+
+a {
+    color: #585858;
 }
 
 /* Light/Dark Theme Icon */
@@ -139,6 +143,7 @@ body {
     border-radius: 16px;
     box-shadow: 2px 2px 8px 0px rgba(224,220,224,1);
     border: 1.5px solid #DCDCDC;
+
 }
 
 .card-header {
@@ -166,13 +171,17 @@ p {
     color: #585858;
 }
 
-.card.active {
-
-}
-
-.card img {
+.card-img {
     position: relative;
     width: 100%;
+}
+
+.more-info {
+    display: none;
+}
+
+.card.active {
+
 }
 
 /* About Section */
