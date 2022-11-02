@@ -184,10 +184,17 @@ p {
 .card-img {
     position: relative;
     width: 100%;
+    display: none;
 }
+
 
 .more-info {
     display: none;
+}
+
+
+.active {
+    display: block;
 }
 
 /* About Section */
