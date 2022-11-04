@@ -41,6 +41,36 @@ cards.forEach(card => {
 // });
 
 
+// Highlight sidebar links on scroll
+
+
+function highlightSidebar() {
+    let aboutLink = document.getElementById('about-link');
+    let projectsLink = document.getElementById('projects-link');
+    let progressLink = document.getElementById('progress-link');
+
+    let scrollPosition = window.scrollY;
+    if (scrollPosition < 400) {
+        aboutLink.classList.add('sidebar-highlight');
+        projectsLink.classList.remove('sidebar-highlight');
+        return;
+    } else if ((scrollPosition >= 400) && (scrollPosition < 800)) {
+        projectsLink.classList.add('sidebar-highlight');
+        aboutLink.classList.remove('sidebar-highlight');
+        progressLink.classList.remove('sidebar-highlight');
+        return;
+    } else if (scrollPosition >= 800) {
+        progressLink.classList.add('sidebar-highlight');
+        projectsLink.classList.remove('sidebar-highlight');
+        return;
+    }
+}
+window.addEventListener('scroll', highlightSidebar);
+
+
+
+
+
 
 
 
