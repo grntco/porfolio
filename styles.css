@@ -64,7 +64,6 @@ body {
 } */
 
 /* Sidebar Navigation */
-
 .sidebar {
     background-color: var(--secondary-color);
     border-right: 1.5px solid var(--border-color);
@@ -212,20 +211,9 @@ p a {
     display: block;
 }
 
-/* About Section */
+/* Sections */
 
-.about-container {
-    min-height: 640px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* Projects Section */
-
-.projects-container, .progress-container {
+.about-container, .projects-container, .progress-container {
     min-height: 640px;
     width: 100%;
     display: flex;
@@ -292,8 +280,6 @@ p a {
     width: fit-content;
 }
 
-/* Progress Section */
-
 .progress-card-info {
     display: flex;
     align-items: center;
@@ -303,8 +289,6 @@ p a {
 .percent-complete {
     color: var(--secondary-txt-color)
 }
-
-
 
 /* Bottom Blur */
 /* .bottom-blur-container {

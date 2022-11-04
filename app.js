@@ -53,6 +53,7 @@ function highlightSidebar() {
     if (scrollPosition < 400) {
         aboutLink.classList.add('sidebar-highlight');
         projectsLink.classList.remove('sidebar-highlight');
+        progressLink.classList.remove('sidebar-highlight');
         return;
     } else if ((scrollPosition >= 400) && (scrollPosition < 800)) {
         projectsLink.classList.add('sidebar-highlight');
@@ -61,12 +62,12 @@ function highlightSidebar() {
         return;
     } else if (scrollPosition >= 800) {
         progressLink.classList.add('sidebar-highlight');
+        aboutLink.classList.remove('sidebar-highlight');
         projectsLink.classList.remove('sidebar-highlight');
         return;
     }
 }
 window.addEventListener('scroll', highlightSidebar);
-
 
 
 
