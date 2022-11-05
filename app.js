@@ -24,26 +24,19 @@ function expandCard(card) {
 
 cards.forEach(card => {
     card.addEventListener('click', function(e) {
-        let index = cards.indexOf(e.target);
-        console.log(index);
-        if ((index >= 1) || (e.target == document.querySelector('.card-links-list').firstChild)) {
-            expandCard(cards[index]);
+        let readMore = card.querySelector('.read-more');
+        if ((e.target === card) || (e.target === readMore)) {
+            expandCard(card);
+            if (readMore.textContent === 'Read More') {
+                readMore.textContent = 'Show Less';
+            } else {
+                readMore.textContent = 'Read More';
+            }
         };
     });
 });
 
-// const readMore = document.getElementById('')
-
-// readMore.forEach(link => {
-//     link.addEventListener('click', function() {
-//         expandCard();
-//     });
-// });
-
-
 // Highlight sidebar links on scroll
-
-
 function highlightSidebar() {
     let aboutLink = document.getElementById('about-link');
     let projectsLink = document.getElementById('projects-link');

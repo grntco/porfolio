@@ -195,6 +195,10 @@ p a {
     color: var(--primary-txt-color);
 }
 
+.read-more {
+    text-decoration: underline;
+}
+
 .card-img {
     position: relative;
     width: 100%;
