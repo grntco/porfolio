@@ -55,12 +55,12 @@ function highlightSidebar() {
         projectsLink.classList.remove('sidebar-highlight');
         progressLink.classList.remove('sidebar-highlight');
         return;
-    } else if ((scrollPosition >= 400) && (scrollPosition < 800)) {
+    } else if ((scrollPosition >= 400) && (scrollPosition < 900)) {
         projectsLink.classList.add('sidebar-highlight');
         aboutLink.classList.remove('sidebar-highlight');
         progressLink.classList.remove('sidebar-highlight');
         return;
-    } else if (scrollPosition >= 800) {
+    } else if (scrollPosition >= 900) {
         progressLink.classList.add('sidebar-highlight');
         aboutLink.classList.remove('sidebar-highlight');
         projectsLink.classList.remove('sidebar-highlight');
