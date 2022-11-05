@@ -11,15 +11,22 @@ themeIcon.addEventListener('click', function() {
 });
 
 // Expanding cards to show more info
+let cardExpanded = false;
+
 function expandCard(card) {
     let cardImgs = card.querySelectorAll('.card-img');
     let moreInfo = card.querySelectorAll('.more-info');
-    cardImgs.forEach(cardImg => {
-        cardImg.classList.toggle('active');
-    });
-    moreInfo.forEach(p => {
-        p.classList.toggle('active');
-    });
+    if (([...cardImgs].length === 0) || ([...moreInfo].length === 0)) {
+        cardExpanded = false;
+    } else {
+        cardImgs.forEach(cardImg => {
+            cardImg.classList.toggle('active');
+        });
+        moreInfo.forEach(p => {
+            p.classList.toggle('active');
+        });
+        cardExpanded = true;
+    }
 };
 
 cards.forEach(card => {
@@ -27,7 +34,7 @@ cards.forEach(card => {
         let readMore = card.querySelector('.read-more');
         if ((e.target === card) || (e.target === readMore)) {
             expandCard(card);
-            if (readMore.textContent === 'Read More') {
+            if ((readMore.textContent === 'Read More') && (cardExpanded)) {
                 readMore.textContent = 'Show Less';
             } else {
                 readMore.textContent = 'Read More';
