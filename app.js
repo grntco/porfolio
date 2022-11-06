@@ -44,34 +44,30 @@ cards.forEach(card => {
 });
 
 // Highlight sidebar links on scroll
+
+const sections = document.querySelectorAll('section');
+const sidebarLinks = document.querySelectorAll('.sidebar-link a');
+
 function highlightSidebar() {
-    let aboutLink = document.getElementById('about-link');
-    let projectsLink = document.getElementById('projects-link');
-    let progressLink = document.getElementById('progress-link');
-
-    let scrollPosition = window.scrollY;
-    if (scrollPosition < 400) {
-        aboutLink.classList.add('sidebar-highlight');
-        projectsLink.classList.remove('sidebar-highlight');
-        progressLink.classList.remove('sidebar-highlight');
-        return;
-    } else if ((scrollPosition >= 400) && (scrollPosition < 900)) {
-        projectsLink.classList.add('sidebar-highlight');
-        aboutLink.classList.remove('sidebar-highlight');
-        progressLink.classList.remove('sidebar-highlight');
-        return;
-    } else if (scrollPosition >= 900) {
-        progressLink.classList.add('sidebar-highlight');
-        aboutLink.classList.remove('sidebar-highlight');
-        projectsLink.classList.remove('sidebar-highlight');
-        return;
-    }
+    let current = '';
+    let scrollPos = window.scrollY;
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop; 
+        const sectionHeight = section.clientHeight;
+        if (scrollPos >= (sectionTop - sectionHeight / 2.5)) {
+            current = section.getAttribute('id');
+        }
+    });
+    console.log(current);
+    sidebarLinks.forEach(link => {
+        link.classList.remove('sidebar-highlight');
+        if (link.classList.contains(current)) {
+            link.classList.add('sidebar-highlight');
+        }
+    });
 }
+
 window.addEventListener('scroll', highlightSidebar);
-
-
-
-
 
 
 

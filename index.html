@@ -25,14 +25,14 @@
       <div class="sidebar-container">
         <div class="name">Grant Collins</div>
         <ul class="sidebar-links-container">
-          <li class="sidebar-links">
-            <a href="#about" id="about-link">About</a>
+          <li class="sidebar-link">
+            <a href="#about" id="about-link" class="about sidebar-highlight">About</a>
           </li>
-          <li class="sidebar-links">
-            <a href="#projects" id="projects-link">Projects</a>
+          <li class="sidebar-link">
+            <a href="#projects" id="projects-link" class="projects">Projects</a>
           </li>
-          <li class="sidebar-links">
-            <a href="#progress" id="progress-link">Progress</a>
+          <li class="sidebar-link">
+            <a href="#progress" id="progress-link" class="progress">Progress</a>
           </li>
         </ul>
         <ul class="sidebar-icons-container">
@@ -67,7 +67,7 @@
     <!-- Right Scrolling Cards Sections - Main-->
     <div class="main-container">
       <!-- About Section -->
-      <div class="about-container" id="about">
+      <section class="about-container" id="about">
         <div class="card about-card">
           <h2>Hi. I'm Grant,</h2>
           <p>
@@ -81,11 +81,11 @@
             scrolling.
           </p>
         </div>
-      </div>
+      </section>
 
       <!-- Project Section -->
 
-      <div class="projects-container" id="projects">
+      <section class="projects-container" id="projects">
         <h2>Projects</h2>
         <div class="card projects-card">
           <div class="date">2022</div>
@@ -172,11 +172,44 @@
             </li>
           </ul>
         </div>
-      </div>
+        <div class="card projects-card">
+          <div class="date">2022</div>
+          <div class="card-header">
+            <h3>Grant Collins Website</h3>
+            <ul class="language-list">
+              <li class="language-item html">
+                <i class="fa-brands fa-html5"></i>
+              </li>
+              <li class="language-item css">
+                <i class="fa-brands fa-css3-alt"></i>
+              </li>
+              <li class="language-item js">
+                <i class="fa-brands fa-square-js"></i>
+              </li>
+            </ul>
+          </div>
+          <p class="excerpt">
+            I coded this personal website from scratch to serve as my web
+            development portfolio.
+          </p>
+          <ul class="card-links-list">
+            <li><a class="card-links read-more">Read More</a></li>
+            <li>
+              <a
+                href="https://github.com/grntco/portfolio"
+                target="_blank"
+                class="card-links"
+                >Source Code</a
+              >
+            </li>
+          </ul>
+        </div>
+      </secton>
 
       <!-- Progress Section -->
 
-      <div class="progress-container" id="progress">
+      <section class="progress-container" id="progress">
+        <!-- THIS ABOVE MIGHT NOT NEED BOTH CLASS AND ID / CHECK AGAINST SIDEBAR LINKS -->
         <h2>Progress</h2>
         <!-- <div class="timeline"></div> -->
         <div class="card progress-card">
@@ -214,7 +247,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>
