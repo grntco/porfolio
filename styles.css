@@ -19,7 +19,6 @@
     --border-color: #404040;
     --box-shadow: 2px 2px 8px 0px rgba(30,30,30,1);
     --box-shadow-hover: 4px 4px 12px 4px rgba(30,30,30,1);
-    transition: background 0.3s ease;
 }
 
 * {
@@ -28,13 +27,13 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
+    transition: all 0.3s ease-out;
 }
 
 body {
     display: flex;
     background-color: var(--primary-color);
     color: var(--primary-txt-color);
-    transition: background 0.3s ease-in;
 }
 
 /* Light/Dark Theme Icon */
@@ -60,9 +59,9 @@ body {
     box-shadow: var(--box-shadow-hover);
 }
 
-/* .fa-sun-bright {
-    color: var(--primary-txt-color);
-} */
+.fa-sun, .fa-moon {
+    transition: 0s;
+}
 
 /* Sidebar Navigation */
 .sidebar {
