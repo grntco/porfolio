@@ -44,7 +44,7 @@ body {
     color: var(--primary-txt-color);
     position: fixed;
     top: 64px;
-    right: 64px;
+    right: 48px;
     font-size: 24px;
     height: 48px;
     width: 48px;
@@ -276,3 +276,7 @@ p a {
 .percent-complete {
     color: var(--secondary-txt-color)
 }
+
+/* Mobile Responsive */
+
+/* Tablet */
