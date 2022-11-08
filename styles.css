@@ -39,9 +39,8 @@ body {
 /* Sidebar Navigation */
 
 .theme-icon {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border: 1.5px solid var(--border-color);
-    box-shadow: var(--box-shadow);
     color: var(--primary-txt-color);
     font-size: 24px;
     height: 48px;
@@ -51,10 +50,12 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    /* margin-left: 4px; */
 }
 
 .theme-icon:hover {
-    box-shadow: var(--box-shadow-hover);
+    background-color: var(--border-color);
+    transition: all 0.3s ease;
 }
 
 .sidebar {
