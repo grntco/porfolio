@@ -20,10 +20,10 @@ function expandCard(card) {
         cardExpanded = false;
     } else {
         cardImgs.forEach(cardImg => {
-            cardImg.classList.toggle('active');
+            cardImg.classList.toggle('expand-card');
         });
         moreInfo.forEach(p => {
-            p.classList.toggle('active');
+            p.classList.toggle('expand-card');
         });
         cardExpanded = true;
     }
