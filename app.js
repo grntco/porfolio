@@ -1,8 +1,6 @@
-// Variables
+// Toggle light/dark mode
 const themeIcon = document.querySelector('.theme-icon');
-const cards = [...document.querySelectorAll('.card')];
 
-// Dark mode
 themeIcon.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     document.body.classList.contains('dark-mode')
@@ -10,7 +8,8 @@ themeIcon.addEventListener('click', function() {
         : themeIcon.innerHTML = '<i class="fa-regular fa-moon"></i>';
 });
 
-// Expanding cards to show more info
+// Expand cards to show more info
+const cards = [...document.querySelectorAll('.card')];
 let cardExpanded = false;
 
 function expandCard(card) {
@@ -44,7 +43,6 @@ cards.forEach(card => {
 });
 
 // Highlight sidebar links on scroll
-
 const sections = document.querySelectorAll('section');
 const sidebarLinks = document.querySelectorAll('.sidebar-link a');
 
@@ -58,7 +56,6 @@ function highlightSidebar() {
             current = section.getAttribute('id');
         }
     });
-    console.log(current);
     sidebarLinks.forEach(link => {
         link.classList.remove('sidebar-highlight');
         if (link.classList.contains(current)) {
