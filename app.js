@@ -25,7 +25,7 @@ function expandCard(card) {
             p.classList.toggle('expand-card');
         });
         cardExpanded = true;
-    }
+    };
 };
 
 cards.forEach(card => {
