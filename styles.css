@@ -36,15 +36,13 @@ body {
     color: var(--primary-txt-color);
 }
 
-/* Light/Dark Mode Theme Icon */
+/* Sidebar Navigation */
+
 .theme-icon {
     background-color: var(--secondary-color);
     border: 1.5px solid var(--border-color);
     box-shadow: var(--box-shadow);
     color: var(--primary-txt-color);
-    position: fixed;
-    top: 64px;
-    right: 48px;
     font-size: 24px;
     height: 48px;
     width: 48px;
@@ -59,7 +57,6 @@ body {
     box-shadow: var(--box-shadow-hover);
 }
 
-/* Sidebar Navigation */
 .sidebar {
     background-color: var(--secondary-color);
     border-right: 1.5px solid var(--border-color);
@@ -74,14 +71,16 @@ body {
 }
 
 .sidebar-container {
+    margin-top: 20vh;
     display: flex;
+    height: fit-content;
     flex-direction: column;
 }
 
 .name {
     color: var(--h-color);
     font-size: 32px;
-    margin-top: 25vh;
+    margin-top: 32px;
     font-weight: 600;
 }
 
