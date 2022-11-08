@@ -17,59 +17,57 @@
     />
   </head>
   <body>
-    <!-- Light/Dark Theme Icon -->
+    <!-- Light/Dark Mode Theme Icon -->
     <div class="theme-icon"><i class="fa-regular fa-moon"></i></div>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Sidebar -->
     <nav class="sidebar">
       <div class="sidebar-container">
         <div class="name">Grant Collins</div>
-        <ul class="sidebar-links-container">
+        <ul class="sidebar-links-list">
           <li class="sidebar-link">
-            <a href="#about" id="about-link" class="about sidebar-highlight">About</a>
+            <a href="#about" class="about sidebar-highlight">About</a>
           </li>
           <li class="sidebar-link">
-            <a href="#projects" id="projects-link" class="projects">Projects</a>
+            <a href="#projects" class="projects">Projects</a>
           </li>
           <li class="sidebar-link">
-            <a href="#progress" id="progress-link" class="progress">Progress</a>
+            <a href="#progress" class="progress">Progress</a>
           </li>
         </ul>
-        <ul class="sidebar-icons-container">
-          <li class="sidebar-icons">
+        <ul class="sidebar-icons-list">
+          <li class="sidebar-icon">
             <a href="https://github.com/grntco" title="GitHub" target="_blank"
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
-          <li class="sidebar-icons">
+          <li class="sidebar-icon">
             <a href="https://grntco.medium.com/" title="Medium" target="_blank"
               ><i class="fa-brands fa-medium"></i
             ></a>
           </li>
-          <li class="sidebar-icons">
+          <li class="sidebar-icon">
             <a href="https://twitter.com/grntco" title="Twitter" target="_blank"
               ><i class="fa-brands fa-twitter"></i
             ></a>
           </li>
-          <li class="sidebar-icons">
+          <li class="sidebar-icon">
             <a href="#" title="Résumé" download
               ><i class="fa-regular fa-file-lines"></i
             ></a>
           </li>
         </ul>
         <div class="copyright">Grant Collins ✌︎ 2022</div>
-        <!-- Made with &#10084;&#65039; in 2022 -->
+        <!-- <div class="copyright">Made with &#10084;&#65039; in 2022</div> -->
       </div>
     </nav>
 
-    <!-- Bottom Blur -->
-    <div class="bottom-blur-container"></div>
-
-    <!-- Right Scrolling Cards Sections - Main-->
+    <!-- Main Sections -->
     <div class="main-container">
+
       <!-- About Section -->
       <section class="about-container" id="about">
-        <div class="card about-card">
+        <div class="card">
           <h2>Hi. I'm Grant,</h2>
           <p>
             a self-taught web-developer. Welcome to my home on the internet.
@@ -77,29 +75,28 @@
           <p>
             I’m currently seeking an opportunity to build or design websites. If
             your company has a relevant open role, feel free to
-            <a href="mailto: grantcollins03@gmail.com">email me</a>. To view my
+            <a href="mailto: grantcollins03@gmail.com" title="grantcollins03@gmail.com">email me</a>. To view my
             experience, <a href="#" download>download my résumé</a> or keep
             scrolling.
           </p>
         </div>
       </section>
 
-      <!-- Project Section -->
-
+      <!-- Projects Section -->
       <section class="projects-container" id="projects">
         <h2>Projects</h2>
         <div class="card projects-card">
           <div class="date">2022</div>
           <div class="card-header">
             <h3>Grant Collins Website</h3>
-            <ul class="language-list">
-              <li class="language-item html">
+            <ul class="skills-list">
+              <li class="skill-item html">
                 <i class="fa-brands fa-html5"></i>
               </li>
-              <li class="language-item css">
+              <li class="skill-item css">
                 <i class="fa-brands fa-css3-alt"></i>
               </li>
-              <li class="language-item js">
+              <li class="skill-item js">
                 <i class="fa-brands fa-square-js"></i>
               </li>
             </ul>
@@ -109,18 +106,18 @@
             development portfolio.
           </p>
           <ul class="card-links-list">
-            <li><a class="card-links read-more">Read More</a></li>
+            <li><a class="card-link read-more">Read More</a></li>
             <li>
               <a
                 href="https://github.com/grntco/portfolio"
                 target="_blank"
-                class="card-links"
+                class="card-link"
                 >Source Code</a
               >
             </li>
           </ul>
         </div>
-        <div id="card-2" class="card projects-card">
+        <div class="card projects-card">
           <img
             src="images/spectacular-space-calculator.png"
             alt="Spectacular Space Calculator project in broswer"
@@ -129,14 +126,14 @@
           <div class="date">2022</div>
           <div class="card-header">
             <h3>Spectacular Space Calculator</h3>
-            <ul class="language-list">
-              <li class="language-item html">
+            <ul class="skills-list">
+              <li class="skill-item html">
                 <i class="fa-brands fa-html5"></i>
               </li>
-              <li class="language-item css">
+              <li class="skill-item css">
                 <i class="fa-brands fa-css3-alt"></i>
               </li>
-              <li class="language-item js">
+              <li class="skill-item js">
                 <i class="fa-brands fa-square-js"></i>
               </li>
             </ul>
@@ -154,12 +151,12 @@
             dignissimos commodi sed reiciendis, molestias ipsam quas.
           </p>
           <ul class="card-links-list">
-            <li><a class="card-links read-more">Read More</a></li>
+            <li><a class="card-link read-more">Read More</a></li>
             <li>
               <a
                 href="https://grntco.github.io/calculator/"
                 target="_blank"
-                class="card-links"
+                class="card-link"
                 >Live Demo</a
               >
             </li>
@@ -167,7 +164,7 @@
               <a
                 href="https://github.com/grntco/calculator"
                 target="_blank"
-                class="card-links"
+                class="card-link"
                 >Source Code</a
               >
             </li>
@@ -176,26 +173,23 @@
       </secton>
 
       <!-- Progress Section -->
-
       <section class="progress-container" id="progress">
-        <!-- THIS ABOVE MIGHT NOT NEED BOTH CLASS AND ID / CHECK AGAINST SIDEBAR LINKS -->
         <h2>Progress</h2>
-        <!-- <div class="timeline"></div> -->
         <div class="card progress-card">
           <div class="progress-card-info">
-            <div class="date">2021-2022</div>
+            <div class="date">2021–2022</div>
             <div class="percent-complete">Completed: 100%</div>
           </div>
           <div class="card-header">
             <h3>The Odin Project: Foundations</h3>
-            <ul class="language-list">
-              <li class="language-item html">
+            <ul class="skills-list">
+              <li class="skill-item html">
                 <i class="fa-brands fa-html5"></i>
               </li>
-              <li class="language-item css">
+              <li class="skill-item css">
                 <i class="fa-brands fa-css3-alt"></i>
               </li>
-              <li class="language-item js">
+              <li class="skill-item js">
                 <i class="fa-brands fa-square-js"></i>
               </li>
             </ul>
@@ -205,12 +199,12 @@
             Javascript.
           </p>
           <ul class="card-links-list">
-            <li><a class="card-links read-more">Read More</a></li>
+            <li><a class="card-link read-more">Read More</a></li>
             <li>
               <a
                 href="https://www.theodinproject.com/paths/foundations/courses/foundations"
                 target="_blank"
-                class="card-links"
+                class="card-link"
                 >View Course</a
               >
             </li>
