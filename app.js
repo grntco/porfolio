@@ -66,6 +66,20 @@ function highlightSidebar() {
 
 window.addEventListener('scroll', highlightSidebar);
 
+// Expand sidebar nav on mobile menu click
+
+const hamMenu = document.querySelector('.hamburger-menu');
+const sidebar = document.querySelector('.sidebar');
+
+function expandSidebar() {
+    sidebar.classList.toggle('sidebar-active');
+    sidebar.classList.contains('sidebar-active')
+    ? hamMenu.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+    : hamMenu.innerHTML = '<i class="fa-solid fa-bars"></i>';
+}
+
+hamMenu.addEventListener('click', expandSidebar);
+
 
 
 
