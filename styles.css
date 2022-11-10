@@ -53,6 +53,8 @@ body {
 }
 
 .hamburger-menu {
+    display: flex;
+    align-items: center;
     color: var(--primary-txt-color);
     margin-left: 32px;
     font-size: 32px;

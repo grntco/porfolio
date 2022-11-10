@@ -71,15 +71,23 @@ window.addEventListener('scroll', highlightSidebar);
 const hamMenu = document.querySelector('.hamburger-menu');
 const sidebar = document.querySelector('.sidebar');
 
-function expandSidebar() {
+function toggleSidebar() {
     sidebar.classList.toggle('sidebar-active');
     sidebar.classList.contains('sidebar-active')
     ? hamMenu.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     : hamMenu.innerHTML = '<i class="fa-solid fa-bars"></i>';
 }
 
-hamMenu.addEventListener('click', expandSidebar);
+hamMenu.addEventListener('click', toggleSidebar);
 
+// Close sidebar on mobile after a sidebar link is clicked
+sidebarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 1024) {
+            toggleSidebar();
+        }
+    });
+});
 
 
 
