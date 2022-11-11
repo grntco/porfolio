@@ -101,6 +101,7 @@ body {
     justify-content: center;
     border-radius: 0px 16px 16px 0px;
     position: fixed;
+    z-index: 1;
 }
 
 .sidebar-container {
@@ -325,7 +326,7 @@ p a {
 
     .sidebar-active {
         left: 0px;
-        transition: all .5s ease-in-out;
+        /* transition: all .5s ease-in-out; */
     }
 
     .mobile-nav {
@@ -348,6 +349,7 @@ p a {
         bottom: 0;
         padding: 24px;
         border-radius: 16px 16px 0px 0px;
+        z-index: 3;
     }
 
 }
