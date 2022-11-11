@@ -15,7 +15,7 @@ let cardExpanded = false;
 function expandCard(card) {
   let cardImgs = card.querySelectorAll(".card-img");
   let moreInfo = card.querySelectorAll(".more-info");
-  if ([...cardImgs].length === 0 || [...moreInfo].length === 0) {
+  if ([...cardImgs].length === 0 && [...moreInfo].length === 0) {
     cardExpanded = false;
   } else {
     cardImgs.forEach((cardImg) => {
