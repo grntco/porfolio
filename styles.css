@@ -246,7 +246,7 @@ p a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 48px;
+    padding: 48px 0px;
 }
 
 .projects-container h2, .progress-container h2 {
