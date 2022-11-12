@@ -37,7 +37,6 @@ body {
 }
 
 /* Mobile Menu */
-
 .mobile-nav {
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
@@ -69,7 +68,6 @@ body {
 }
 
 /* Sidebar Navigation */
-
 .theme-icon {
     background-color: var(--primary-color);
     border: 1.5px solid var(--border-color);
@@ -82,7 +80,6 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    /* margin-left: 4px; */
 }
 
 .theme-icon:hover {
@@ -167,8 +164,6 @@ body {
     margin-left: 320px;
 }
 
-
-
 /* Cards */
 .card {
     background-color: var(--secondary-color);
@@ -238,7 +233,6 @@ p a {
 }
 
 /* Sections */
-
 .about-container, .projects-container, .progress-container {
     min-height: 640px;
     width: 100%;
@@ -258,7 +252,6 @@ p a {
 }
 
 /* Projects and Progress Cards */
-
 .projects-card, .progress-card {
     margin-top: 48px;
 }
@@ -309,7 +302,6 @@ p a {
 }
 
 /* Footer/Copyright */
-
 .copyright {
     color: var(--secondary-txt-color);
     position: fixed;
@@ -318,7 +310,6 @@ p a {
 }
 
 /* Mobile Responsive */
-
 @media screen and (max-width: 1024px) {
     .sidebar {
         left: -320px;
@@ -327,7 +318,6 @@ p a {
 
     .sidebar-active {
         left: 0px;
-        /* transition: all .5s ease-in-out; */
     }
 
     .mobile-nav {
@@ -337,10 +327,6 @@ p a {
     .main-container {
         margin: 0; 
     }
-
-    /* .progress-card:last-child {
-        margin-bottom: 64px;
-    } */
 
     .copyright {
         background-color: var(--secondary-color);

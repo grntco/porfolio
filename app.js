@@ -1,17 +1,25 @@
-// Toggle light/dark mode
+// Variables
+const mainContainer = document.querySelector(".main-container");
+const sidebar = document.querySelector(".sidebar");
 const themeIcon = document.querySelector(".theme-icon");
+const sidebarLinks = document.querySelectorAll(".sidebar-link a");
+const hamMenu = document.querySelector(".hamburger-menu");
+const cards = [...document.querySelectorAll(".card")];
+const sections = document.querySelectorAll("section");
+let cardExpanded = false;
 
-themeIcon.addEventListener("click", function () {
+// Toggle light/dark mode
+
+function toggleTheme() {
   document.body.classList.toggle("dark-mode");
   document.body.classList.contains("dark-mode")
     ? (themeIcon.innerHTML = '<i class="far fa-sun"></i>')
     : (themeIcon.innerHTML = '<i class="fa-regular fa-moon"></i>');
-});
+};
+
+themeIcon.addEventListener("click", toggleTheme);
 
 // Expand cards to show more info
-const cards = [...document.querySelectorAll(".card")];
-let cardExpanded = false;
-
 function expandCard(card) {
   let cardImgs = card.querySelectorAll(".card-img");
   let moreInfo = card.querySelectorAll(".more-info");
@@ -25,8 +33,8 @@ function expandCard(card) {
       p.classList.toggle("expand-card");
     });
     cardExpanded = true;
-  }
-}
+  };
+};
 
 cards.forEach((card) => {
   card.addEventListener("click", function (e) {
@@ -37,15 +45,12 @@ cards.forEach((card) => {
         readMore.textContent = "Show Less";
       } else {
         readMore.textContent = "Read More";
-      }
-    }
+      };
+    };
   });
 });
 
 // Highlight sidebar links on scroll
-const sections = document.querySelectorAll("section");
-const sidebarLinks = document.querySelectorAll(".sidebar-link a");
-
 function highlightSidebar() {
   let current = "";
   let scrollPos = window.scrollY;
@@ -54,29 +59,25 @@ function highlightSidebar() {
     const sectionHeight = section.clientHeight;
     if (scrollPos >= sectionTop - sectionHeight / 2.5) {
       current = section.getAttribute("id");
-    }
+    };
   });
   sidebarLinks.forEach((link) => {
     link.classList.remove("sidebar-highlight");
     if (link.classList.contains(current)) {
       link.classList.add("sidebar-highlight");
-    }
+    };
   });
-}
+};
 
 window.addEventListener("scroll", highlightSidebar);
 
 // Expand sidebar nav on mobile menu click
-
-const hamMenu = document.querySelector(".hamburger-menu");
-const sidebar = document.querySelector(".sidebar");
-
 function toggleSidebar() {
   sidebar.classList.toggle("sidebar-active");
   sidebar.classList.contains("sidebar-active")
     ? (hamMenu.innerHTML = '<i class="fa-solid fa-xmark"></i>')
     : (hamMenu.innerHTML = '<i class="fa-solid fa-bars"></i>');
-}
+};
 
 hamMenu.addEventListener("click", toggleSidebar);
 
@@ -88,18 +89,16 @@ sidebarLinks.forEach((link) => {
       sidebar.classList.contains("sidebar-active")
     ) {
       toggleSidebar();
-    }
+    };
   });
 });
 
 // Close sidebar on mobile if the main container is clicked
-const mainContainer = document.querySelector(".main-container");
-
 mainContainer.addEventListener("click", () => {
   if (
     window.innerWidth <= 1024 &&
     sidebar.classList.contains("sidebar-active")
   ) {
     toggleSidebar();
-  }
+  };
 });
