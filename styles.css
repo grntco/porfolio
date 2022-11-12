@@ -337,6 +337,10 @@ p a {
         margin: 0; 
     }
 
+    .progress-card:last-child {
+        margin-bottom: 64px;
+    }
+
     .copyright {
         background-color: var(--secondary-color);
         box-shadow: var(--box-shadow);
