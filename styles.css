@@ -295,6 +295,7 @@ p a {
     display: flex;
     align-items: center;
     gap: 16px;
+    pointer-events: none;
 }
 
 .percent-complete {
