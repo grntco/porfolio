@@ -310,6 +310,7 @@ p a {
 /* Footer/Copyright */
 
 .copyright {
+    color: var(--secondary-txt-color);
     position: fixed;
     bottom: 8px;
     margin-left: 88px;
