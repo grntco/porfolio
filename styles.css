@@ -246,6 +246,7 @@ p a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 48px;
 }
 
 .projects-container h2, .progress-container h2 {
@@ -337,9 +338,9 @@ p a {
         margin: 0; 
     }
 
-    .progress-card:last-child {
+    /* .progress-card:last-child {
         margin-bottom: 64px;
-    }
+    } */
 
     .copyright {
         background-color: var(--secondary-color);
